@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join us Now</title>
+    <style>
+        body{
+            font-family: 'Comic Neue', cursive;
+        }
+        * {box-sizing: border-box;}
+        input[type=text], input[type=password]{
+            width: 100%;
+            font-size: 25px;
+            color: black;
+            border: none;
+            padding: 10px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            
+        }
+        label{
+            font-size: 20px;
+        }
+        .Signup{
+            font-size: 15px;
+            padding: 20px;
+            background-color: aqua;
+            color: black;
+            border-radius: 30px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+        #maindiv{
+            display: flex;
+            width: 100%;
+            padding: 20%;
+            padding-top: 1px;
+            background-color: black;
+            color: white;
+
+        }
+        h1{
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 3px;
+        }
+        h3{
+            text-align: center;
+        }
+        button {
+            font-size: 22px;
+            font-weight: bold;
+            padding: 7px 15px;
+            margin: 6px 0;
+            border: none;
+            cursor: pointer;
+            width: 90%;
+            opacity: 0.9;
+}
+        button:hover {
+            opacity:1;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="maindiv">
+    <div>
+        <h1>Join us Today!</h1>
+        <h3>Signup to Create an Account.</h3>
+        <form action="/action_page.php" method="get>
+        <label for="Name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="Name" required>
+        <label for="Email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="Email" required>
+        <label for="password"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+        <label for="ConfirmPassword"><b>Confirm Password</b></label>
+        <input type="password" placeholder="Confirm Password" name="ConfirmPassword" required>
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom: 30px">
+            Remember Me
+        </label>
+        <div>
+            <button type="submit" class="Signup">Create an Account</button>
+        </div>
+        </form>
+    </div>
+</div>
+</body>    
+</html>
